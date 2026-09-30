@@ -1,7 +1,5 @@
 """System 3: AI agent with tool use."""
-
 import json
-
 from config import client, MODEL, QUESTIONS, banner
 from tools import TOOLS, TOOL_FUNCTIONS
 
@@ -16,7 +14,6 @@ Rules:
 4. Give a clear final answer.
 """
 
-
 def agent(question, max_steps=6, verbose=True):
 
     messages = [
@@ -29,7 +26,6 @@ def agent(question, max_steps=6, verbose=True):
             "content": question
         }
     ]
-
     # Handle the known fee questions deterministically after
     # the LLM identifies the required information.
 
@@ -131,7 +127,6 @@ def agent(question, max_steps=6, verbose=True):
     )
 
     return response.choices[0].message.content.strip()
-
 
 if __name__ == "__main__":
 
