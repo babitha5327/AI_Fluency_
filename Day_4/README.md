@@ -475,7 +475,7 @@ The final model choice should therefore consider **memory, quantization, context
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻 Student
 
 **Babitha M**
 
